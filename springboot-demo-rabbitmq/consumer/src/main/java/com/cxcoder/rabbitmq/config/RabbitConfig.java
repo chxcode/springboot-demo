@@ -1,19 +1,13 @@
 package com.cxcoder.rabbitmq.config;
 
 import com.cxcoder.rabbitmq.constant.RabbitConstants;
-import com.cxcoder.rabbitmq.utils.JsonMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.core.*;
-import org.springframework.amqp.rabbit.annotation.RabbitListenerConfigurer;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.amqp.rabbit.listener.RabbitListenerEndpointRegistrar;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.messaging.converter.MappingJackson2MessageConverter;
-import org.springframework.messaging.handler.annotation.support.DefaultMessageHandlerMethodFactory;
-import org.springframework.messaging.handler.annotation.support.MessageHandlerMethodFactory;
 
 import java.util.HashMap;
 import java.util.Map;
