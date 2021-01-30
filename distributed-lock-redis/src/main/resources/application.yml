@@ -1,0 +1,16 @@
+# 基础配置
+server:
+  port: 8020
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: NON_NULL
+  redis:
+    host: localhost
+    password: 123456
+    database: 11
+    port: 6379
+logging:
+  level:
+    root: INFO
